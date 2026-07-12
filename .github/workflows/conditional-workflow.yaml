@@ -20,9 +20,6 @@ jobs:
   Conditionl-demo:
     name: Conditional-steps
     runs-on: ubuntu-latest
-    Conditionl-demo:
-      name: Conditional-steps
-      runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
