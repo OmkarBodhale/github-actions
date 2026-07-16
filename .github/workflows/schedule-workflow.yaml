@@ -1,0 +1,16 @@
+name: Schedule Workflow
+
+on:
+  schedule:
+    - cron: '2 * * * *'
+      timezone: Indian/Kolkata
+  
+jobs:
+  trigger_this_workflow_every_2_minutes:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: pause for 2 minutes
+        run: sleep 120
+      - name: 2 minutes have passed
+        run: echo "2 minutes have passed"
