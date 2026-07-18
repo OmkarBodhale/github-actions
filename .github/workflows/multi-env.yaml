@@ -30,7 +30,7 @@ jobs:
             - name: If DEV, print DEV specific info
               if: ${{ inputs.environment == 'dev' }}
               run: |
-                echo "This is the DEV environment. My variable is ${{ vars.VAR }}."
+                echo "This is the DEV environment. My variable is ${{ vars.var }}."
 
             - name: If UAT, print UAT specific info
               if: ${{ inputs.environment == 'uat' }}
