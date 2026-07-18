@@ -3,7 +3,7 @@ name: Schedule Workflow
 on:
   schedule:
     # The shortest interval GitHub Actions supports is every 5 minutes
-    - cron: '*/5 * * * *'
+    - cron: '*/6 * * * *'
       timezone: Asia/Kolkata
   
 jobs:
