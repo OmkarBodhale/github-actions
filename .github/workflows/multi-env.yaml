@@ -9,7 +9,7 @@ on:
                 type: choice
                 options:
                     - dev
-                    - test
+                    - uat
                     - prod
 
 jobs: 
@@ -30,14 +30,14 @@ jobs:
             - name: If DEV, print DEV specific info
               if: ${{ inputs.environment == 'dev' }}
               run: |
-                echo "This is the DEV environment. My variable is ${{ vars.var }}."
+                echo "This is the DEV environment. My variable is ${{ vars.VAR }}."
 
             - name: If UAT, print UAT specific info
               if: ${{ inputs.environment == 'uat' }}
               run: |
-                echo "This is the UAT environment. My variable is ${{ vars.var }}."
+                echo "This is the UAT environment. My variable is ${{ vars.VAR }}."
 
             - name: If PROD, print PROD specific info
               if: ${{ inputs.environment == 'prod' }}
               run: |
-                echo "This is the PROD environment. My variable is ${{ vars.var }}."             
+                echo "This is the PROD environment. My variable is ${{ vars.VAR }}."             
