@@ -8,7 +8,7 @@ on:
         required: false
         default: false
       target_branch:
-        description: 'Target branch for the workflow'
+        description: 'Target branch for the  workflow'
         type: string
         required: true
         default: main
