@@ -41,4 +41,4 @@ jobs:
           echo "This step runs only on workflow_dispatch events"
           echo "Simulate failure input value: ${{ github.event.inputs.simulate_failure }}"
           echo "Target branch input value: ${{ github.event.inputs.target_branch }}"
-          echo "This was triggered manually by ${{ github.actor }}"
+          echo "This was triggered manually  by ${{ github.actor }}"
